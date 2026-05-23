@@ -24,7 +24,7 @@
   function toggleLang() {
     const isZh = document.body.classList.toggle('zh');
     localStorage.setItem('nw_lang', isZh ? 'zh' : 'en');
-    document.documentElement.lang = isZh ? 'zh-Hans' : 'en';
+    document.documentElement.lang = isZh ? 'zh-CN' : 'en';
     document.getElementById('langToggle').textContent = isZh ? '中文' : 'EN';
   }
 
@@ -32,7 +32,7 @@
     const saved = localStorage.getItem('nw_lang');
     const isZh = saved !== 'en';
     document.body.classList.toggle('zh', isZh);
-    document.documentElement.lang = isZh ? 'zh-Hans' : 'en';
+    document.documentElement.lang = isZh ? 'zh-CN' : 'en';
     document.getElementById('langToggle').textContent = isZh ? '中文' : 'EN';
   })();
 

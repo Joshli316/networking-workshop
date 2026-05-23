@@ -258,6 +258,73 @@ a:focus-visible {
 }
 .big-stat-label-en { font-size: 16px; color: var(--text-sub); }
 
+/* ─── Donut Viz (Slide 3) ───────────────────────────────── */
+.viz-donut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  margin: 6px 0 10px;
+  flex-wrap: wrap;
+}
+.donut-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+.legend-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: var(--text);
+}
+.legend-swatch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.legend-text strong { color: var(--primary-dark); }
+
+/* ─── VS Compare (Slide 8 good vs bad question) ────────── */
+.viz-vs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+  width: 100%;
+}
+.vs-col {
+  padding: 16px 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--surface);
+}
+.vs-bad { border-left: 4px solid #dc2626; }
+.vs-good { border-left: 4px solid #16a34a; }
+.vs-label {
+  font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-sub);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.vs-bad .vs-label { color: #b91c1c; }
+.vs-good .vs-label { color: #15803d; }
+.vs-col p {
+  font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
 /* ─── Activity Slide ────────────────────────────────────── */
 .activity-slide { background: var(--accent-light); }
 .activity-slide .topic-badge {
