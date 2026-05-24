@@ -1,4 +1,4 @@
-const CACHE = 'networking-workshop-v2';
+const CACHE = 'networking-workshop-v3';
 const ASSETS = [
   '/',
   '/index.html',
@@ -10,6 +10,7 @@ const ASSETS = [
   '/app.js',
   '/resources.js',
   '/404.js',
+  '/apple-touch-icon.png',
   '/sitemap.xml',
 ];
 

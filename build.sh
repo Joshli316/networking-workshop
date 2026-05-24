@@ -7,7 +7,7 @@ mkdir -p dist
 cp index.html resources.html 404.html dist/
 cp styles.css print.css dist/
 cp app.js resources.js 404.js qrcode.min.js dist/
-cp sw.js dist/
+cp sw.js apple-touch-icon.png dist/
 cp _headers robots.txt sitemap.xml dist/
 cp og-image.png dist/ 2>/dev/null || true
 echo "dist/ built: $(ls -1 dist | wc -l | tr -d ' ') files"
