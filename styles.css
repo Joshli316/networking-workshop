@@ -1194,6 +1194,9 @@ a:focus-visible {
     zoom: 0.7;
   }
   .slide:last-child { page-break-after: auto; break-after: auto; }
+  /* slide-10 (3-question T/F quiz) force-reveals all three Q&A blocks stacked,
+     overflowing one landscape page at 0.7 — shrink just this slide to keep it on one page */
+  #slide-10 { zoom: 0.56; }
   .slide, .slide * { animation: none !important; }
   /* hide interactive chrome (nav, toggles, reveal + print buttons, hub link) */
   .slide-header, .slide-footer, .lang-toggle, .skip-to-main, .key-hint,
