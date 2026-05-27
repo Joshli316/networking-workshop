@@ -1,4 +1,4 @@
-const CACHE = 'networking-workshop-v6';
+const CACHE = 'networking-workshop-v7';
 const ASSETS = [
   '/',
   '/index.html',
